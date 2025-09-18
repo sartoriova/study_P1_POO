@@ -3,7 +3,7 @@ package enrollment;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class enrollment.Enrollment {
+public class Enrollment {
     private static int idCount;
 
     private int id;
@@ -13,7 +13,7 @@ public class enrollment.Enrollment {
     private Course[] courses;
     private int qtdeCourses;
 
-    public enrollment.Enrollment(Student student) {
+    public Enrollment(Student student) {
         if (!isValidEnrollment(student)) {
             concluded = true;
             return;
